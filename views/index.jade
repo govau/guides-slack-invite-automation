@@ -16,7 +16,7 @@ html
         main
           form(method="POST", action="/join-slack/invite").email-submission-form
             label(for="slack-email").uikit-text-input__label.uikit-display-1 Email
-            input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.uikit-text-input
+            input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.uikit-text-input
             if tokenRequired
               input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.uikit-text-input
             input(type="submit", value="Join").submit.uikit-btn
