@@ -10,20 +10,28 @@ html
     .container
       .grids.col-md-6
         header.join-slack-header
-          h1.uikit-display-6
-            strong #{community}
-          p #{__('HEADER', community)}
+          h1.uikit-display-5 Join #{community} on Slack
+          p.uikit-display-2 #{__('HEADER')}
         main
-          form(method="POST", action="/join-slack/invite").email-submission-form
+          form(method="POST", action="/join-slack/invite")#join-form.email-submission-form
             label(for="slack-email").uikit-text-input__label.uikit-display-1 Email
             input(type="email", name="email", placeholder="#{__('ENTER_EMAIL')}")#slack-email.uikit-text-input
             if tokenRequired
               input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.uikit-text-input
             input(type="submit", value="Join").submit.uikit-btn
         footer.disclaimer
-          h2.uikit-display-1 #{__('DISCLAIMER', community)}
-          p The GOV.AU guides slack was set up by the Australian Government Digital Transformation Agency as a place to get updates, ask for help and suggest stuff for our products, including UI-Kit.
-          p Conversations in this slack do not necessarily represent the views or opinions of the DTA or the Australian Government.
+          h2.uikit-display-2
+            strong About our Slack group
+          p The GOV.AU guides discussion group on Slack was set up by the Australian Government Digital Transformation Agency. It's a place to get updates, ask for help and suggest stuff for our products, including UI-Kit.
+          h2.uikit-display-2
+            strong Please note
+          ul
+            li Be respectful: this is for everyone.
+            li You are responsible for what you post — this Slack group is open to everyone, not just Australian Government employees.
+            li Conversations in this slack do not necessarily represent the views or opinions of the DTA or the Australian Government.
+          h2.uikit-display-2
+            strong Need help?
+          p If you have questions or need help email guides@digital.gov.au
     script.
       var tokenRequired = #{tokenRequired};
       var form = document.getElementById('join-form');
