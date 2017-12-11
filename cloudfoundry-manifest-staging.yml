@@ -5,6 +5,3 @@ applications:
   buildpack: nodejs_buildpack
   memory: 64M
   instances: 1
-
-routes:
-- route: guides.service.gov.au/join-slack
