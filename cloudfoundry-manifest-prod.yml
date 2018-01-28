@@ -8,3 +8,6 @@ applications:
 
 routes:
 - route: guides.service.gov.au/join-slack
+
+services:
+- ups-slack-invite

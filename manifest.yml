@@ -27,6 +27,3 @@ applications:
     # INVITE_TOKEN: <token>
     
     LOCALE: en
-
-services:
-- ups-slack-invite
