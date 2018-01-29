@@ -1,11 +1,5 @@
 const envVars = JSON.parse( process.env.VCAP_SERVICES );
 
-console.log('===================');
-console.log(envVars);
-console.log(envVars['user-provided'][ 0 ].credentials.SLACK_URL );
-console.log('===================');
-
-
 module.exports = {
   // your community or team name to display on join page.
   community: process.env.COMMUNITY_NAME || 'Join our GOLD team',
