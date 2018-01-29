@@ -1,4 +1,4 @@
-console.log(process.env.VCAP_SERVICES['user-provided'][ 0 ].credentials.SLACK_URL);
+console.log(process.env);
 
 module.exports = {
   // your community or team name to display on join page.
