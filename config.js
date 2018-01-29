@@ -1,4 +1,7 @@
-console.log(process.env);
+console.log('===================');
+console.log(typeof process.env.VCAP_SERVICES);
+console.log(process.env.VCAP_SERVICES);
+console.log('===================');
 
 module.exports = {
   // your community or team name to display on join page.
