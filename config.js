@@ -2,7 +2,7 @@ const envVars = JSON.parse( process.env.VCAP_SERVICES );
 
 module.exports = {
   // your community or team name to display on join page.
-  community: process.env.COMMUNITY_NAME || 'Join our GOLD team',
+  community: process.env.COMMUNITY_NAME || 'GOLD community',
   // your slack team url (ex: socketio.slack.com)
   slackUrl: envVars['user-provided'][ 0 ].credentials.SLACK_URL || 'YOUR-TEAM.slack.com',
   // access token of slack
